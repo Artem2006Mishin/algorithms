@@ -3,7 +3,7 @@
 
 using namespace std;
 
-// лучший случай O(1)
+// лучший случай O(1) 
 int linear_search(vector<int>{1, 2, 3, 4, 5, 6, 7, 8, 9}, 1);
 
 // худший случай O(n)
