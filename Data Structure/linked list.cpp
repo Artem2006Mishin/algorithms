@@ -76,13 +76,9 @@ int main()
     cout << endl;
 
     // удалить 
-   
-    third.next = nullptr;
-    /*
-     Node* p = &x;    
-    delete p;
-    КАК ЭТО УДАЛИТЬ ВОПРОС!
-    */
+    third.next->next = nullptr; // Установим следующий указатель в nullptr
+    third.next = nullptr; // Установим сам указатель в nullptr
+    
 
     Node* iter1 = &first;
     while (iter1 != nullptr) {
