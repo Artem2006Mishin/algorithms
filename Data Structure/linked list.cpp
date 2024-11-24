@@ -78,7 +78,8 @@ int main()
     // удалить 
     third.next->next = nullptr; // Установим следующий указатель в nullptr
     third.next = nullptr; // Установим сам указатель в nullptr
-    
+    // удалить через 'delete x' я не могу, так как я не выделял динамичесски память,
+    // first, second .. находятся в статике, не выделены с помощью new
 
     Node* iter1 = &first;
     while (iter1 != nullptr) {
